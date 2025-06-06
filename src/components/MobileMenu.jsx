@@ -1,23 +1,27 @@
 // src/components/MobileMenu.jsx
-import logo from '../assets/logo.jpg';
+import React from 'react';
+import logo from '../assets/logo.jpg';      // tu logo en JPG
+import NavbarLinks from './NavbarLinks';
 
 export default function MobileMenu({ isOpen, onClose }) {
+  // Si no está abierto, no renderiza nada (null)
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 bg-white flex flex-col items-center p-6">
-      <button onClick={onClose} className="self-start text-4xl text-blue-600 mb-4">
+      {/* Botón cerrar (X) en la esquina superior izquierda */}
+      <button
+        onClick={onClose}
+        className="self-start text-4xl text-blue-600 mb-6 hover:text-blue-800 transition-colors duration-200"
+      >
         ✕
       </button>
-      <img src={logo} alt="Logo" className="w-32 mb-6" />
-      <nav className="flex flex-col items-center gap-4 text-blue-600 text-lg font-medium">
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#citas">Citas</a>
-      </nav>
-      <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-full font-bold">
-        AUXILIO EN RUTA YA!
-      </button>
+
+      {/* Logo centrado */}
+      <img src={logo} alt="Logo El Intercontinental" className="w-32 mb-8" />
+
+      {/* Aquí inyectamos los links en modo mobile */}
+      <NavbarLinks isMobile={true} />
     </div>
   );
 }
