@@ -5,7 +5,7 @@ import Ubicacion from './components/Ubicacion';
 
 function App() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden">
 
        <section className="relative min-h-screen ">
       {/* Video de fondo */}
@@ -18,13 +18,13 @@ function App() {
       />
 
       {/* Overlay negro semitransparente */}
-      <div className="fixed inset-0 bg-black/50 z-15"></div>
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
 
       {/* Header (franja amarilla + navbar) */}
       <Header />
 
       {/* Contenido Hero */}
-      <div className="relative z-20 flex flex-col items-center justify-center text-center text-white pt-40 px-4">
+      <div className="relative z-20 flex flex-col items-center justify-center text-center text-white m-2 pt-40 px-4">
         <h1 className="text-4xl md:text-5xl font-bold pt-2">
           Mecánica el Intercontinental
         </h1>
