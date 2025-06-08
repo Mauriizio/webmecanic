@@ -1,6 +1,6 @@
 // src/components/MobileMenu.jsx
 import React from 'react';
-import logo from '../assets/logo.jpg';      // tu logo en JPG
+import logo from '../assets/logo.png';      // tu logo en JPG
 import NavbarLinks from './NavbarLinks';
 
 export default function MobileMenu({ isOpen, onClose }) {
