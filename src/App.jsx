@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import fondoVideo from './assets/videos/llanta.mp4';
 import Ubicacion from './components/Ubicacion';
+import Servicios from './components/Servicios';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       <Header />
 
       {/* Contenido Hero */}
-      <div className="relative z-20 flex flex-col items-center justify-center text-center text-white m-2 pt-40 px-4">
+      <div className="relative z-20 flex flex-col items-center justify-center text-center text-white pt-40 px-4">
         <h1 className="text-4xl md:text-5xl font-bold pt-2">
           Mecánica el Intercontinental
         </h1>
@@ -46,6 +47,7 @@ function App() {
 
 
          <Ubicacion />
+         <Servicios />
       
 
       {/* Aquí puedes incluir más secciones (Servicios, Contacto, Footer, etc.) */}
