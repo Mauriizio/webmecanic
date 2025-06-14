@@ -4,6 +4,7 @@ import fondoVideo from './assets/videos/llanta.mp4';
 import Ubicacion from './components/Ubicacion';
 import Servicios from './components/Servicios';
 import Diesel from './components/Diesel';
+import Ruta from "./components/Ruta"
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
          <Ubicacion />
          <Servicios />
          <Diesel/>
+         <Ruta />
       
 
       {/* Aquí puedes incluir más secciones (Servicios, Contacto, Footer, etc.) */}
