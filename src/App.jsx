@@ -3,6 +3,7 @@ import Header from './components/Header';
 import fondoVideo from './assets/videos/llanta.mp4';
 import Ubicacion from './components/Ubicacion';
 import Servicios from './components/Servicios';
+import Diesel from './components/Diesel';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
 
          <Ubicacion />
          <Servicios />
+         <Diesel/>
       
 
       {/* Aquí puedes incluir más secciones (Servicios, Contacto, Footer, etc.) */}

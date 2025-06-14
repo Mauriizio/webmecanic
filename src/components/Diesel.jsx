@@ -1,14 +1,14 @@
-// src/components/Servicios.jsx
+// src/components/Diesel.jsx
 import React from 'react';
-import videoServicio from '../assets/videos/servicio-domicilio.mp4'; // Ruta real del video
-import imagen from '../assets/mecanica-domicilio-1.jpeg';         // Ruta real de la imagen
+import videoServicio2 from '../assets/videos/diesel.mp4'; // Ruta real del video
+import imagen2 from '../assets/diesel.jpg';         // Ruta real de la imagen
 
-export default function Servicios() {
+export default function Diesel() {
   return (
     <section className="relative overflow-hidden min-h-screen flex justify-center p-2 pt-8">
       {/* Video background sticky */}
       <video
-        src={videoServicio}
+        src={videoServicio2}
         autoPlay
         loop
         muted
@@ -22,20 +22,20 @@ export default function Servicios() {
      <div className="z-10 max-w-4xl w-full px-4 flex flex-col items-center gap-8 pt-0">
         {/* Título */}
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-          Mecánica a Domicilio
+          Mecánica Diesel
         </h2>
 
         {/* Lista de servicios */}
         <ul className="text-white text-lg space-y-2">
-          <li>– Auxilio vial en todo Santiago</li>
-          <li>– Llegamos en minutos</li>
-          <li>– Todo tipo de autos menores</li>
-          <li>– Mecanica Diesel</li>
+          <li>– Maquinaria Pesada</li>
+          <li>– Mecanica Agricola</li>
+          <li>– Escáner para motores Cummins</li>
+          <li>– Todo tipo de Camiones</li>
         </ul>
 
         {/* Imagen intermedia */}
         <img
-   src={imagen}
+   src={imagen2}
    alt="Servicio de mecánica diesel para camiones y maquinaria pesada"
    className="w-full max-w-sm h-auto rounded-lg shadow-lg"
  />
