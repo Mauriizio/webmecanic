@@ -9,13 +9,28 @@ export default function Header({ isOverlay = true }) {
   return (
     <header className="relative z-40">
       {/* Franja amarilla */}
-      <div className="bg-[#FCF259] text-black text-center text-sm font-bold p-2">
-        <p>
-          <span className="text-blue-700 underline">AGENDA TU HORA</span> Y OBTÉN UN DESCUENTO GRATIS
-          <br />
-          <span className="underline text-blue-700">LLAMA AHORA</span>
-        </p>
-      </div>
+     <div className="bg-[#FCF259] text-black text-center text-sm font-bold p-2">
+  <p>
+    <a
+      href="https://wa.me/56932555764?text=Hola,%20quiero%20agendar%20una%20hora"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-700 underline"
+    >
+      AGENDA TU HORA
+    </a>{" "}
+    Y OBTÉN UN DESCUENTO GRATIS
+    <br />
+    <a
+      href="https://wa.me/56932555764?text=Hola,%20necesito%20un%20mecánico%20ahora"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline text-blue-700"
+    >
+      LLAMA AHORA
+    </a>
+  </p>
+</div>
 
       {/* Navbar sobre el video */}
       <div className={`${isOverlay ? 'absolute top-8' : 'relative'} left-0 w-full flex items-center justify-between px-4 py-4 md:py-6`}>

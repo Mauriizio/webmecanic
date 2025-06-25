@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-stroke-white {
+  -webkit-text-stroke: 1px rgb(253, 252, 252);
+  color: black; /* Puedes usar blanco si combinas con shadow */
+}

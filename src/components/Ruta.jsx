@@ -41,9 +41,14 @@ export default function Ruta() {
  />
 
         {/* Botón de llamada a la acción */}
-        <button className="w-max px-6 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors duration-200 m-4">
-          Mecanico YA!
-        </button>
+        <a
+  href="https://wa.me/56932555764?text=HOLA,%20VENGO%20DE%20LA%20PAGINA%20WEB,%20NECESITO%20UN%20MECANICO"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-2 px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200"
+>
+  Mecanico YA!
+</a>
       </div>
     </section>
   );

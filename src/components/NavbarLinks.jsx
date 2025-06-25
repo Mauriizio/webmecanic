@@ -12,6 +12,9 @@ export default function NavbarLinks({ isMobile = false }) {
     <div className={`${isMobile ? 'flex flex-col items-center gap-6 ' : 'hidden md:flex items-center gap-8'}`}>
       {/* En desktop hidden hasta md, luego flex. En mobile el contenedor se mostrará dentro de MobileMenu */}
 
+    <Link to={"/"} className='px-4 py-2 rounded-md text-blue-600 text-lg font-medium hover:underline text-bold hover:bg-white hover:text-blue-700 transition-colors duration-200'>
+      Inicio</Link>
+
      <Link to={"/service"} className='px-4 py-2 rounded-md text-blue-600 text-lg font-medium hover:underline text-bold hover:bg-white hover:text-blue-700 transition-colors duration-200'>
       Servicios
       </Link>
@@ -20,8 +23,7 @@ export default function NavbarLinks({ isMobile = false }) {
       Contacto
       </Link>
 
-      <Link to={"/citas"} className='px-4 py-2 rounded-md text-blue-600 text-lg font-medium hover:underline text-bold hover:bg-white hover:text-blue-700 transition-colors duration-200'>
-      Citas</Link>
+      
 
       <a href='tel:+56932555764'className="px-6 py-2 bg-blue-600 text-white rounded-full font-bold whitespace-nowrap hover:bg-blue-700 transition-colors duration-200 flex flex-col justify-center items-center">
     <PhoneCall className="w-5 h-5" />AUXILIO EN RUTA YA! 

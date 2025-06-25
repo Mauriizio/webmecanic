@@ -5,7 +5,7 @@ import imagen2 from '../assets/diesel.jpg';         // Ruta real de la imagen
 
 export default function Diesel() {
   return (
-    <section className="relative overflow-hidden min-h-screen flex justify-center p-2 pt-8">
+    <section className="relative overflow-hidden flex justify-center p-2 pt-8 ">
       {/* Video background sticky */}
       <video
         src={videoServicio2}
@@ -41,9 +41,14 @@ export default function Diesel() {
  />
 
         {/* Botón de llamada a la acción */}
-        <button className="w-max px-6 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors duration-200 m-4">
-          Llama Ahora
-        </button>
+        <a
+  href="https://wa.me/56932555764?text=HOLA,%20VENGO%20DE%20LA%20PAGINA%20WEB,%20NECESITO%20UN%20MECANICO"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-2 mb-6 px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200"
+>
+  Llama Ahora
+</a>
       </div>
     </section>
   );
