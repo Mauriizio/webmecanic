@@ -1,6 +1,5 @@
 // src/components/Ruta.jsx
 import React from 'react';
-import videoRuta from '../assets/videos/ruta.mp4'; // Ruta real del video
 import imagenMecanica from '../assets/mecanica-domicilio-2.jpeg';         // Ruta real de la imagen
 
 export default function Ruta() {
@@ -8,7 +7,7 @@ export default function Ruta() {
     <section className="relative overflow-hidden min-h-screen flex justify-center p-2 pt-8">
       {/* Video background sticky */}
       <video
-        src={videoRuta}
+        src="https://www.pexels.com/es-es/download/video/25397932/"
         autoPlay
         loop
         muted

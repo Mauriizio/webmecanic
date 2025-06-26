@@ -1,5 +1,4 @@
 import Header from './Header';
-import fondoVideo from '../assets/videos/llanta.mp4';
 import Ubicacion from './Ubicacion';
 import Servicios from './Servicios';
 import Diesel from './Diesel';
@@ -12,7 +11,7 @@ export default function Inicio() {
       <section className="relative min-h-screen">
         {/* Video de fondo */}
         <video
-          src={fondoVideo}
+          src="https://www.pexels.com/es-es/download/video/4488722/"
           autoPlay
           loop
           muted

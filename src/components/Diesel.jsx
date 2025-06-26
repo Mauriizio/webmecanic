@@ -1,6 +1,5 @@
 // src/components/Diesel.jsx
 import React from 'react';
-import videoServicio2 from '../assets/videos/diesel.mp4'; // Ruta real del video
 import imagen2 from '../assets/diesel.jpg';         // Ruta real de la imagen
 
 export default function Diesel() {
@@ -8,7 +7,7 @@ export default function Diesel() {
     <section className="relative overflow-hidden flex justify-center p-2 pt-8 ">
       {/* Video background sticky */}
       <video
-        src={videoServicio2}
+        src="https://www.pexels.com/es-es/download/video/7018509/"
         autoPlay
         loop
         muted

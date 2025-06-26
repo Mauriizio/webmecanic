@@ -1,6 +1,5 @@
 // src/components/Servicios.jsx
 import React from 'react';
-import videoServicio from '../assets/videos/servicio-domicilio.mp4'; // Ruta real del video
 import imagen from '../assets/mecanica-domicilio-1.jpeg';         // Ruta real de la imagen
 
 export default function Servicios() {
@@ -8,7 +7,7 @@ export default function Servicios() {
     <section className="relative overflow-hidden min-h-screen flex justify-center p-2 pt-8">
       {/* Video background sticky */}
       <video
-        src={videoServicio}
+        src="https://www.pexels.com/es-es/download/video/18104139/"
         autoPlay
         loop
         muted
